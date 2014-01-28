@@ -85,13 +85,13 @@ Pod::Spec.new do |s|
   s.source_files  = 'Classes', 'Classes/**/*.{h,m}', 'Categories', 'Categories/*', 'Utils', 'Utils/*', 'Components', 'Components/*'
   s.exclude_files = 'Classes/Exclude'
   s.subspec 'Utils' do |utils|
-    utils.source_files = 'Utils'
+    utils.source_files = 'DevUtil/Utils'
   end
   s.subspec 'Categories' do |categories|
-    categories.source_files = 'Categories'
+    categories.source_files = 'DevUtil/Categories'
   end
   s.subspec 'Components' do |components|
-    components.source_files = 'Components'
+    components.source_files = 'DevUtil/Components'
   end
 
   # s.public_header_files = 'Classes/**/*.h'
