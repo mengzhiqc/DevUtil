@@ -21,6 +21,7 @@
 		8AC45B33189749DD00B61808 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC45B15189749DD00B61808 /* UIKit.framework */; };
 		8AC45B3B189749DD00B61808 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AC45B39189749DD00B61808 /* InfoPlist.strings */; };
 		8AC45B3D189749DD00B61808 /* DevUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC45B3C189749DD00B61808 /* DevUtilTests.m */; };
+		8AC45B4F18974D8C00B61808 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AC45B4E18974D8C00B61808 /* NSDate+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		8AC45B38189749DD00B61808 /* DevUtilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DevUtilTests-Info.plist"; sourceTree = "<group>"; };
 		8AC45B3A189749DD00B61808 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8AC45B3C189749DD00B61808 /* DevUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DevUtilTests.m; sourceTree = "<group>"; };
+		8AC45B4D18974D8C00B61808 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		8AC45B4E18974D8C00B61808 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +115,12 @@
 		8AC45B17189749DD00B61808 /* DevUtil */ = {
 			isa = PBXGroup;
 			children = (
+				8AC45B4A18974D7A00B61808 /* Categories */,
+				8AC45B4B18974D7A00B61808 /* Components */,
+				8AC45B4C18974D7A00B61808 /* Utils */,
+				8AC45B4618974C8B00B61808 /* Sample */,
 				8AC45B20189749DD00B61808 /* LSAppDelegate.h */,
 				8AC45B21189749DD00B61808 /* LSAppDelegate.m */,
-				8AC45B23189749DD00B61808 /* Main.storyboard */,
-				8AC45B26189749DD00B61808 /* LSViewController.h */,
-				8AC45B27189749DD00B61808 /* LSViewController.m */,
-				8AC45B29189749DD00B61808 /* Images.xcassets */,
 				8AC45B18189749DD00B61808 /* Supporting Files */,
 			);
 			path = DevUtil;
@@ -150,6 +153,40 @@
 				8AC45B39189749DD00B61808 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8AC45B4618974C8B00B61808 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				8AC45B23189749DD00B61808 /* Main.storyboard */,
+				8AC45B26189749DD00B61808 /* LSViewController.h */,
+				8AC45B27189749DD00B61808 /* LSViewController.m */,
+				8AC45B29189749DD00B61808 /* Images.xcassets */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
+		8AC45B4A18974D7A00B61808 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8AC45B4D18974D8C00B61808 /* NSDate+Extension.h */,
+				8AC45B4E18974D8C00B61808 /* NSDate+Extension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		8AC45B4B18974D7A00B61808 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8AC45B4C18974D7A00B61808 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC45B4F18974D8C00B61808 /* NSDate+Extension.m in Sources */,
 				8AC45B1E189749DD00B61808 /* main.m in Sources */,
 				8AC45B22189749DD00B61808 /* LSAppDelegate.m in Sources */,
 				8AC45B28189749DD00B61808 /* LSViewController.m in Sources */,
@@ -461,6 +499,7 @@
 				8AC45B42189749DD00B61808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AC45B43189749DD00B61808 /* Build configuration list for PBXNativeTarget "DevUtilTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +508,7 @@
 				8AC45B45189749DD00B61808 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

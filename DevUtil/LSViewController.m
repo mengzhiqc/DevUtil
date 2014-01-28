@@ -7,6 +7,7 @@
 //
 
 #import "LSViewController.h"
+#import "NSDate+Extension.h"
 
 @interface LSViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //NSDate+Extension Category
+    NSDate *currentDate = [NSDate date];
+    NSString *currentDateString = [currentDate stringWithStringFormat:@"YY-MM-dd HH:mm:ss"];
+    NSLog(@"currentDateString:%@",currentDateString);
 }
 
 - (void)didReceiveMemoryWarning
